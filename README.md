@@ -1,18 +1,24 @@
 # ESP32-S3-Box-3-Voice-Assistant-Sensor-Dock
 
-This config integrates Voice Assistant with the S3 Box 3's sensor dock.  Full HA integration for everything actionable and adjustable on the device.  Top-left physical button turns on/off the screen (device remains fully active).  Bottom-left physical button resets the device.  Red circle touch button toggles Voice Assistant mute.  Top MUTE button will cause an unfixable error in the VA and the device must be reset to fix it, so don't touch that button.
+感謝原作者：[AlmostInteractive 的專案](https://github.com/AlmostInteractive/ESP32-S3-Box-3-Voice-Assistant-Sensor-Dock)
 
-Features:
-  - Voice assistant with on-device and in-HA wakeword
-  - Three VA response modes: Speech, Beeps, and Mute (settings page and red-circle button)
-  - Touchscreen
-  - IR learning
-  - IR blasting
-  - Temperature sensor
-  - Battery sensor
-  - Radar presence detection
+原本僅是打算解決官方韌體上中文顯示亂碼的問題。
 
-NB: This and similar configs seem to have an issue where the touchscreen _sometimes_ fails to initialize (write failure).  To cope with this, I've added a failure detection and failure state which will automatically reboot after 10 seconds until the touchscreen initializes correctly.  Pushing the top-left physical button during the countdown will cancel the reboot.
+此設定將語音助理整合到 S3 Box 3 的感應器底座中，實現對設備上所有可操作和可調整功能的完整 Home Assistant 整合。左上方實體按鈕用於開啟/關閉螢幕（設備仍保持完全運行）。左下方實體按鈕用於重置設備。紅色圓形觸控按鈕用於切換語音助理的靜音狀態。頂部的 MUTE 按鈕會導致語音助理出現無法修復的錯誤，必須重置設備才能修復，因此請勿按下該按鈕。
+
+功能：
+  - 語音助理，支援裝置端和 Home Assistant 伺服器的喚醒詞
+  - 三種語音助理回應模式：語音、提示音和靜音（可透過設定頁面及紅色圓形按鈕切換）
+  - 觸控螢幕
+  - 紅外線學習功能
+  - 紅外線發射功能
+  - 溫度感測器
+  - 電池感測器
+  - 雷達存在檢測
+  - 繁體中文顯示（回應內文與自動斷行、Emoji）
+  - 頁面增加時間
+
+注意：此設定及類似設定有時會出現觸控螢幕無法初始化的問題（寫入失敗）。為了解決此問題，我加入了失敗檢測和失敗狀態，設備將在 10 秒後自動重啟，直到觸控螢幕正確初始化為止。在倒數期間按下左上方實體按鈕可取消重啟。
 
 ## Status Page
 ![status](https://github.com/AlmostInteractive/ESP32-S3-Box-3-Voice-Assistant-Sensor-Dock/assets/3893631/946a43e4-8dcf-4b96-9e07-71952494b283)
