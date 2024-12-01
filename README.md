@@ -2,7 +2,7 @@
 
 感謝原作者：[AlmostInteractive 的專案](https://github.com/AlmostInteractive/ESP32-S3-Box-3-Voice-Assistant-Sensor-Dock)
 
-原本僅是打算解決官方韌體上中文顯示亂碼的問題、轉而使用該專案進行繁體中文版本製作，由於修改的地方較多，因而不使用 PR、而另外製作繁體中文版本。字型於最小字方面採用了[更紗黑體](https://github.com/be5invis/Sarasa-Gothic)混合 Apple Emoji 字型利用 Fontlab 組合以期能同時顯示中文與 Emoji，囿於可能涉及版權問題，因為不做上傳。
+原本僅是打算解決官方韌體上中文顯示亂碼的問題、轉而使用該專案進行繁體中文版本製作，由於修改的地方較多，因而不使用 PR、而另外製作繁體中文版本。字型於最小字方面採用了[更紗黑體](https://github.com/be5invis/Sarasa-Gothic)混合 Apple Emoji 字型利用 Fontlab 組合以期能同時顯示中文與 Emoji，由於可能涉及版權問題，因為不做上傳。
 
 此設定將語音助理整合到 S3 Box 3 的感應器底座中，實現對設備上所有可操作和可調整功能的完整 Home Assistant 整合。左上方實體按鈕用於開啟/關閉螢幕（設備仍保持完全運行）。左下方實體按鈕用於重置設備。紅色圓形觸控按鈕用於切換語音助理的靜音狀態。頂部的 MUTE 按鈕會導致語音助理出現無法修復的錯誤，必須重置設備才能修復，因此請勿按下該按鈕。
 
